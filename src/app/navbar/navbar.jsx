@@ -1,12 +1,25 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Navbar() {
-  const height = window.innerHeight;
-  console.log(height);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    setHeight(window.innerHeight);
+
+    const handleResize = () => {
+      setHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div
       className="mx-auto"
@@ -47,7 +60,7 @@ export default function Navbar() {
         <p
           className="px-1"
           style={{ cursor: "pointer", textDecoration: "none", color: "black" }}
-          onClick={() => window.scrollTo({ top: height*5, behavior: "smooth" })}
+          onClick={() => window.scrollTo({ top: height * 5, behavior: "smooth" })}
         >
           Contact
         </p>
