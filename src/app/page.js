@@ -34,14 +34,14 @@ export default function Home() {
         >
           <div className="col-md-7">
             <Image src={omar} alt="omar" style={{ width: "150px", height: "150px" }} />
-            <h1>Hi, I'm Omar a Web Developer</h1>
+            <h1>Hi, I am Omar a Web Developer</h1>
           </div>
 
           <div className="col-md-2">
             <p>
               A web developer specializing in React, Next.js, and JavaScript
               frameworks. With expertise in HTML, CSS, Node.js, and Express, I
-              create seamless, responsive, and scalable web applications. Let's
+              create seamless, responsive, and scalable web applications. Lets
               bring your ideas to life!
             </p>
             <div
@@ -54,7 +54,7 @@ export default function Home() {
             <p>
               Senior-year computer science student, with a great passion for
               programming, which brought me to the Arab Open University where I
-              am pursuing my bachelor's degree.
+              am pursuing my bachelors degree.
             </p>
           </div>
         </div>
