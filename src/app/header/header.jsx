@@ -27,7 +27,7 @@ export default function Header() {
           paddingTop: "10vh",
         }}
       >
-        <div className="col-md-7 position-relative">
+        <div className="col-md-4 position-relative">
           <Image
             src={omar}
             alt="omar"
@@ -35,7 +35,7 @@ export default function Header() {
               height: "100%",
               width: "100%",
               objectFit: "cover",
-              opacity: "0.5",
+              opacity: "0.4",
             }}
           />
           <h1 style={{ position: "absolute", top: "5%" }}>
@@ -59,7 +59,7 @@ export default function Header() {
           ></div>
           <p>
             Fresh Computer Science graduate from the Arab Open University, Where
-            i have gained knowledge and experience in various programming
+            I have gained knowledge and experience in various programming
             languages and technologies. Eager to apply my skills in real-world
             projects and continue learning in a dynamic environment.
           </p>
