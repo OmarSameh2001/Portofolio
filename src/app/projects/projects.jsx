@@ -1,5 +1,4 @@
 "use client";
-import next from "next";
 import React, { useEffect, useState } from "react";
 
 export default function Projects() {
@@ -58,15 +57,10 @@ export default function Projects() {
           {repos.map((repo) => (
             <a
               key={repo.id}
-              className="card col-md-4 text-center my-1 py-1"
+              className="card col-md-4 text-center my-1 py-1 repo-card"
               href={repo.html_url}
               target="_blank"
-              style={{
-                textDecoration: "none",
-                color: "white",
-                backgroundColor: "black",
-                border: "1px solid white",
-              }}
+              rel="noopener noreferrer"
             >
               <h3 className="card-title">{repo.name}</h3>
               <div
@@ -90,8 +84,23 @@ export default function Projects() {
         }}
         className="text-center m-0"
       >
-        End of projects.
+        
       </p>
+
+      <style jsx>{`
+        .repo-card {
+          text-decoration: none;
+          color: white;
+          background-color: black;
+          border: 1px solid white;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .repo-card:hover {
+          background-color: #333; /* Change to your desired hover color */
+          transform: scale(1.01); /* Optional: slightly scale up the card */
+        }
+      `}</style>
     </>
   );
 }

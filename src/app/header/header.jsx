@@ -43,7 +43,7 @@ export default function Header() {
           </h1>
         </div>
 
-        <div className="col-md-5" style={{ maxHeight: "80%", maxWidth: "60%" }}>
+        <div className="col-md-5 px-1" style={{ maxHeight: "80%", maxWidth: "60%", alignSelf: "center" }}>
           <p>
             A Web Developer specialized in MERN stack development. With
             experience in creating and maintaining web applications. I create
