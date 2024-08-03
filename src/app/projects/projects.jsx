@@ -33,42 +33,65 @@ export default function Projects() {
 
   return (
     <>
-    <h1 style={{paddingTop: "10vh", color: "white", backgroundColor: "black", paddingBottom: "3vh"}} className="text-center m-0">Projects</h1>
-    <div
-      style={{
-        maxHeight: "100vh",
-        maxWidth: "100vw",
-        paddingBottom: "5vh",
-        marginBottom: "10vh",
-        backgroundColor: "black",
-        display: "flex", // Stack children vertically
-        overflowY: "auto",
-      }}
-      className="App-header mx-auto px-4"
-    >
-      
-      <div className="row w-100">
-        {repos.map((repo) => (
-          <a
-            key={repo.id}
-            className="card col-md-4 text-center my-1 py-1"
-            href={repo.html_url}
-            target="_blank"
-            style={{textDecoration: "none", color: "white", backgroundColor: "black", border: "1px solid white"}}
-          >
-            <h3 className="card-title">{repo.name}</h3>
-            <div
-              className="line"
+      <h1
+        style={{
+          paddingTop: "10vh",
+          color: "white",
+          backgroundColor: "black",
+          paddingBottom: "3vh",
+        }}
+        className="text-center m-0"
+      >
+        Projects
+      </h1>
+      <div
+        style={{
+          maxHeight: "100vh",
+          maxWidth: "100vw",
+          backgroundColor: "black",
+          display: "flex", // Stack children vertically
+          overflowY: "auto",
+        }}
+        className="App-header mx-auto px-4"
+      >
+        <div className="row w-100">
+          {repos.map((repo) => (
+            <a
+              key={repo.id}
+              className="card col-md-4 text-center my-1 py-1"
+              href={repo.html_url}
+              target="_blank"
               style={{
+                textDecoration: "none",
+                color: "white",
+                backgroundColor: "black",
                 border: "1px solid white",
-                height: "1px",
               }}
-            ></div>
-            <p className="card-text">{repo.description}</p>
-          </a>
-        ))}
+            >
+              <h3 className="card-title">{repo.name}</h3>
+              <div
+                className="line"
+                style={{
+                  border: "1px solid white",
+                  height: "1px",
+                }}
+              ></div>
+              <p className="card-text">{repo.description}</p>
+            </a>
+          ))}
+        </div>
       </div>
-    </div></>
-    
+      <p
+        style={{
+          paddingTop: "1vh",
+          color: "white",
+          backgroundColor: "black",
+          paddingBottom: "1vh",
+        }}
+        className="text-center m-0"
+      >
+        End of projects.
+      </p>
+    </>
   );
 }
