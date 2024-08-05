@@ -41,7 +41,7 @@ export default function Header() {
               opacity: "0.35",
             }}
           />
-          <h1 style={{ position: "absolute", top: "5%" }}>
+          <h1 style={{ position: "absolute", top: "5%", left: "2%" }}>
             Hi, I am Omar a Web Developer
           </h1>
         </div>
