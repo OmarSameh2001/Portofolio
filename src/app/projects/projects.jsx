@@ -55,7 +55,7 @@ export default function Projects() {
       >
         <div className="row w-100">
           {repos.map((repo) => (
-            <div className="card col-md-4 text-center my-1 py-0 px-1 bg-transparent">
+            <div className="card col-md-4 text-center my-1 py-0 px-1 bg-transparent" key={repo.id}>
               <a
                 key={repo.id}
                 className="repo-card"
