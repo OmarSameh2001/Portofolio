@@ -27,7 +27,10 @@ export default function Header() {
           paddingTop: "10vh",
         }}
       >
-        <div className="col-md-4 position-relative">
+        <div
+          className="col-md-4 position-relative"
+          style={{ borderRadius: "10px", border: "1px solid #777777" }}
+        >
           <Image
             src={omar}
             alt="omar"
@@ -35,7 +38,7 @@ export default function Header() {
               height: "100%",
               width: "100%",
               objectFit: "cover",
-              opacity: "0.4",
+              opacity: "0.35",
             }}
           />
           <h1 style={{ position: "absolute", top: "5%" }}>
@@ -43,7 +46,19 @@ export default function Header() {
           </h1>
         </div>
 
-        <div className="col-md-5 px-1" style={{ maxHeight: "80%", maxWidth: "60%", alignSelf: "center" }}>
+        <div
+          className="col-md-5 mx-1 p-2"
+          style={{
+            height: "100%",
+            maxWidth: "60%",
+            border: "1px solid #777777",
+            borderRadius: "10px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            gap: "10%",
+          }}
+        >
           <p>
             A Web Developer specialized in MERN stack development. With
             experience in creating and maintaining web applications. I create
@@ -54,7 +69,7 @@ export default function Header() {
             className="line"
             style={{
               border: "1px solid white",
-              height: "3px",
+              height: "2px",
             }}
           ></div>
           <p>

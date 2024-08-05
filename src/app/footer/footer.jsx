@@ -26,7 +26,6 @@ export default function Footer() {
         <div style={{ flex: 1 }}>
           <h3>Connect with Me</h3>
           <ul style={{ padding: 0, listStyleType: "none" }}>
-            <li style={{ marginBottom: 5 }}></li>
             <li style={{ marginBottom: 5 }}>
               <a
                 href="https://www.linkedin.com/in/omarsameh2001/"
@@ -34,6 +33,15 @@ export default function Footer() {
                 style={{ color: "black" }}
               >
                 LinkedIn
+              </a>
+            </li>
+            <li style={{ marginBottom: 5 }}>
+              <a
+                href="https://github.com/OmarSameh2001"
+                target="_blank"
+                style={{ color: "black" }}
+              >
+                Github
               </a>
             </li>
           </ul>
