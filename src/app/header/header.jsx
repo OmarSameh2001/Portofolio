@@ -56,7 +56,7 @@ export default function Header() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            gap: "10%",
+            gap: "5%",
           }}
         >
           <p>
